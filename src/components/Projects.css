@@ -1,9 +1,10 @@
 #project-item {
     margin: 15px;
-    max-width: 35%;
+    min-width: 90%;
+    max-width: 90%;
     border-bottom: 1px #ddd solid;
     padding: 10px;
-    position: relative;
+    /* position: relative; */
     /* border-radius: 10px; */
     /* padding: 0 0 10px 0; */
 }
@@ -30,6 +31,7 @@
     color: #fff;
     margin: 3px;
     border-radius: 5rem;
+    max-width: 100px;
 }
 
 #project-item a {
@@ -44,4 +46,15 @@
 
 #link-grid a {
     margin: 0 5px;
+}
+
+@media only screen and (max-width: 678px) {
+    #project-item {
+        max-height: 300px;
+        min-height: 200px;
+    }
+
+    #project-item, #project-title, #project-info, #tech-list, .link-icon {
+        font-size: medium;
+    }
 }

@@ -7,6 +7,7 @@ const Projects = () => {
     const techArray = (techStack) => {
         return techStack.map(tech => <li key={tech.id} id="tech-list">{tech}</li>)
     }
+    
     const projectList = projects.map((project) => (
         <div key={project.id} id="project-item" className="pb-3 text-center">
           <h3 id="project-title" className="fw-bold">{project.title}</h3>
@@ -18,6 +19,7 @@ const Projects = () => {
           </div>
         </div>
       ))
+
   return (
     <div className="container-sm justify-content-sm-center">
       <div id="project-grid" className="d-flex flex-wrap justify-content-center">
