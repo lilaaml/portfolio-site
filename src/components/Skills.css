@@ -1,7 +1,10 @@
+#skill-ctr {
+    background-color: rgb(18, 18, 18);
+}
+
 .skill-item {
     flex-grow: 1;
     flex-basis: 200;
-    background-color: rgb(18, 18, 18);
     /* background-color: var(--semi-background-color); */
     margin: 0 5px 0 5px;
     font-size: 5rem;
