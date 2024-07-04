@@ -1,0 +1,18 @@
+.highlight {
+    color: #bf263c;
+}
+
+.download-btn a {
+    min-width: 150px;
+}
+
+.cv-btn {
+    background-color: #bf263c;
+    color: var(--text-color);
+}
+
+.portfolio-btn {
+    background-color: var(--background-color);
+    border: 1px solid #2c2c2c;
+    color: var(--text-color);
+}
