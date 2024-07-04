@@ -1,0 +1,25 @@
+.skill-item {
+    flex-grow: 1;
+    flex-basis: 200;
+    background-color: rgb(18, 18, 18);
+    /* background-color: var(--semi-background-color); */
+    margin: 0 5px 0 5px;
+    font-size: 5rem;
+    cursor: pointer;
+    align-items: center;
+    /* padding-top: 0; */
+    max-height: 7rem;
+    padding: 0;
+}
+
+.skill-icon {
+    margin-bottom: 25px;
+}
+
+.test {
+    font-size: 5rem;
+}
+
+.skill-item h3 {
+    font-size: 5rem;
+}

@@ -21,7 +21,7 @@
 }
 
 #project-item, #project-title, #project-info, #tech-grid, #link-grid {
-    background-color: var(--secondary-color);
+    background-color: var(--semi-background-color);
 }
 
 #tech-list {
