@@ -30,18 +30,30 @@
     list-style: none;
     width: 30%;
     /* background-color: rgb(108, 117, 125); */
-    background-color: #bf263c;
+    /* background-color: #bf263c; */
     color: #fff;
     margin: 3px;
     border-radius: 5rem;
     max-width: 100px;
     cursor: pointer;
     border: none;
-    box-shadow: 0 4px 0 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /* box-shadow: 0 4px 16px 0 rgba(191, 38, 60, 0.2), 0 6px 20px 0 rgba(191, 38, 60, 0.19); */
+    /* box-shadow: 0 4px 0 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #bf263c;
+    /* box-shadow: 0 8px 16px 0 rgba(191, 38, 60, 0.2), 0 6px 20px 0 rgba(191, 38, 60, 0.19); */
+    box-shadow: 0 0 7px #bf263c, 0 0 10px #bf263c, 0 0 21px #bf263c;
+    padding-right: 2px;
 }
 
 #tech-list:hover {
-    background-color: #3c3b3d;
+    /* background-color: #3c3b3d;  */
+    color: #d8334a;
 }
 
 #project-item a {

@@ -5,7 +5,7 @@ import './Projects.css'
 
 const Projects = () => {
     const techArray = (techStack) => {
-        return techStack.map(tech => <li key={tech.id} id="tech-list">{tech}</li>)
+        return techStack.map(tech => <li key={tech.id} id="tech-list"><span className="dot d-inline-flex mx-2"></span>{tech}</li>)
     }
     
     const projectList = projects.map((project) => (
@@ -21,7 +21,7 @@ const Projects = () => {
       ))
 
   return (
-    <div className="container-sm justify-content-sm-center">
+    <div className="container-sm justify-content-sm-center mb-5">
       <div id="project-grid" className="d-flex flex-wrap justify-content-center">
         {projectList}
       </div>
