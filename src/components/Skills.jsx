@@ -9,7 +9,7 @@ import './Skills.css'
 
 const Skills = () => {
   return (
-    <div id="skill-ctr" className="my-5 pt-3 pb-5">
+    <div id="skill-ctr" className="pt-3 pb-5">
         <div className="container-sm mb-3">
             <h3 className="fw-bold text-center mt-3 mb-0">Languages</h3>
             <div className="skill-grid d-flex flex-wrap">

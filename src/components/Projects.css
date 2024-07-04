@@ -2,19 +2,10 @@
     margin: 15px;
     min-width: 90%;
     max-width: 90%;
-    /* border: 2px solid var(--semi-background-color); */
-    /* border: 1px solid var(--semi-background-color); */
     padding: 10px;
-    /* position: relative; */
     border-radius: 10px;
-    /* padding: 0 0 10px 0; */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
-/* #project-item img {
-    max-width: 100%;
-    border: 2px solid #efefef;
-} */
 
 #project-item span {
     margin: auto;
@@ -22,23 +13,20 @@
     flex-direction: column;
 }
 
-/* #project-item, #project-title, #project-info, #tech-grid, #link-grid {
-    background-color: var(--background-color);
-} */
+.tech-item {
+    flex-grow: 1;
+    flex-basis: 200;
+}
 
 #tech-list {
     list-style: none;
     width: 30%;
-    /* background-color: rgb(108, 117, 125); */
-    /* background-color: #bf263c; */
     color: #fff;
     margin: 3px;
     border-radius: 5rem;
     max-width: 100px;
     cursor: pointer;
     border: none;
-    /* box-shadow: 0 4px 16px 0 rgba(191, 38, 60, 0.2), 0 6px 20px 0 rgba(191, 38, 60, 0.19); */
-    /* box-shadow: 0 4px 0 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
 
 .dot {
@@ -46,13 +34,11 @@
     height: 7px;
     border-radius: 50%;
     background-color: #bf263c;
-    /* box-shadow: 0 8px 16px 0 rgba(191, 38, 60, 0.2), 0 6px 20px 0 rgba(191, 38, 60, 0.19); */
     box-shadow: 0 0 7px #bf263c, 0 0 10px #bf263c, 0 0 21px #bf263c;
-    padding-right: 2px;
+    /* padding-right: 2px; */
 }
 
 #tech-list:hover {
-    /* background-color: #3c3b3d;  */
     color: #d8334a;
 }
 
@@ -85,5 +71,16 @@
 
     #project-item, #project-title, #project-info, #tech-list, .link-icon {
         font-size: medium;
+    }
+
+    .live-btn {
+        margin-bottom: 5px;
+    }
+}
+
+/* not working for some reason */
+@media only screen and (max-width: 390px) {
+    .live-btn {
+        margin-bottom: 5px;
     }
 }

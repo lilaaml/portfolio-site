@@ -1,5 +1,6 @@
 #skill-ctr {
     background-color: rgb(18, 18, 18);
+    margin-top: 15px;
 }
 
 .skill-item {
@@ -25,4 +26,10 @@
 
 .skill-item h3 {
     font-size: 5rem;
+}
+
+@media only screen and (max-width: 678px) {
+    .live-btn {
+        margin-bottom: 5px;
+    }
 }
