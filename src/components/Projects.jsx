@@ -33,7 +33,7 @@ const Projects = () => {
       ))
 
   return (
-    <div className="container-sm justify-content-sm-center mb-5">
+    <div id="projects" className="container-sm justify-content-sm-center mb-5">
       <div id="project-grid" className="d-flex flex-wrap justify-content-center">
       <h3 className="fw-bold text-center mt-3 mb-0">Featured Projects</h3>
         {projectList}
