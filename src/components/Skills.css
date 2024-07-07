@@ -29,8 +29,17 @@
     font-size: 5rem;
 }
 
+.skill-hr {
+    background-color: #bf263c;
+    border: 4px solid #bf263c;
+    margin: 1rem 0;
+    border: 0;
+}
+
 @media only screen and (max-width: 678px) {
     .live-btn {
         margin-bottom: 5px;
     }
 }
+
+/* testing */

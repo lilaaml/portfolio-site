@@ -5,13 +5,12 @@ import { RiNextjsFill, RiFlutterFill } from "react-icons/ri";
 import { GrVmware } from "react-icons/gr";
 import { VscVscode } from "react-icons/vsc";
 import { SiPostgresql } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
 import './Skills.css'
 
 const Skills = () => {
   return (
     <div id="skill-ctr" className="pt-3 pb-5">
-        <h3 className="fw-bold text-center mt-3 mb-0">Skill-Set and Tools</h3>
-        {/* 2nd Layout */}
         <div className="container-sm mb-3">
             <h3 className="fw-bold text-center mt-3 mb-0">Front-end Development</h3>
             <div className="skill-grid d-flex flex-wrap">
@@ -19,9 +18,10 @@ const Skills = () => {
                 <div className="skill-item text-center" title="HTML"><FaHtml5 className="skill-icon"/></div>
                 <div className="skill-item text-center" title="CSS"><FaCss3Alt className="skill-icon"/></div>
                 <div className="skill-item text-center" title="React"><FaReact className="skill-icon"/></div>
-                <div className="skill-item text-center" title="Next.js"><RiNextjsFill className="skill-icon"/></div>
+                <div className="skill-item text-center" title="Next.js"><RiNextjsFill className="skill-icon" /></div>
                 <div className="skill-item text-center" title="Bootstrap"><FaBootstrap className="skill-icon"/></div>
                 <div className="skill-item text-center" title="Tailwind CSS"><SiTailwindcss className="skill-icon"/></div>
+                <div className="skill-item text-center" title="Typescript"><BiLogoTypescript  className="skill-icon"/></div>
                 <div className="skill-item text-center" title="Vite"><SiVite className="skill-icon"/></div>
                 <div className="skill-item text-center" title="Vercel"><IoLogoVercel className="skill-icon" /></div>
             </div>
