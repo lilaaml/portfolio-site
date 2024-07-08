@@ -50,7 +50,7 @@ const Skills = () => {
             </div>
         </div>
         <div className="container-sm mb-3">
-            <h3 className="fw-bold text-center mt-3 mb-0">Mobile Development</h3>
+            <h3 className="fw-bold text-center mt-3 mb-0">Mobile App Development</h3>
             <div className="skill-grid d-flex flex-wrap">
                 <div className="skill-item text-center" title="Flutter"><RiFlutterFill className="skill-icon"/></div>
                 <div className="skill-item text-center" title="Java"><FaJava className="skill-icon"/></div>
