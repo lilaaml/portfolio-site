@@ -5,7 +5,7 @@ export const projects = [
         techStack: ['React', 'Bootstrap', 'Vite', 'JavaScript', 'HTML', 'CSS'],
         demo: 'https://sneakerspot.vercel.app/',
         sourceCode: 'https://github.com/lilaaml/sneakerspot',
-        appCategory: 'big',
+        projectScale: 'big',
         demoAvailable: true
     },
     {
@@ -14,8 +14,18 @@ export const projects = [
         techStack: ['jQuery', 'Bootstrap', 'JavaScript', 'HTML', 'CSS'],
         demo: 'https://lilaaml.github.io/TicketingApp/',
         sourceCode: 'https://github.com/lilaaml/TicketingApp',
-        appCategory: 'big',
+        projectScale: 'big',
         demoAvailable: true
+    },
+    {
+        title: 'LoopLab',
+        info: 'A homepage designed for a consulting firm that offers services, showcases achievements and lists job openings.',
+        techStack: ['React', 'Bootstrap', 'Vite', 'JavaScript', 'HTML', 'CSS'],
+        demo: 'https://looplab-eight.vercel.app/',
+        sourceCode: 'https://github.com/lilaaml/looplab',
+        projectScale: 'big',
+        demoAvailable: true
+
     },
     {
         title: 'Sarana Door',
@@ -23,7 +33,7 @@ export const projects = [
         techStack: ['React', 'Python', 'Django', 'PostgreSQL'],
         demo: 'Unavailable',
         sourceCode: 'https://github.com/lilaaml/sd-new',
-        appCategory: 'big',
+        projectScale: 'big',
         demoAvailable: false
     },
     {
@@ -32,7 +42,7 @@ export const projects = [
         techStack: ['Java', 'Dart', 'Flutter'],
         demo: 'Unavailable',
         sourceCode: 'https://github.com/lilaaml/final-project',
-        appCategory: 'big',
+        projectScale: 'big',
         demoAvailable: false
     },
     {
@@ -41,7 +51,7 @@ export const projects = [
         techStack: ['JavaScript', 'HTML', 'CSS'],
         demo: 'https://lilaaml.github.io/todolist-app/',
         sourceCode: 'https://github.com/lilaaml/todolist-app',
-        appCategory: 'small',
+        projectScale: 'small',
         demoAvailable: true
     },
     {
@@ -50,7 +60,7 @@ export const projects = [
         techStack: ['JavaScript', 'HTML', 'CSS'],
         demo: 'https://lilaaml.github.io/calculator-app/',
         sourceCode: 'https://github.com/lilaaml/calculator-app',
-        appCategory: 'small',
+        projectScale: 'small',
         demoAvailable: true
     },
 ]
