@@ -23,7 +23,17 @@ export const projects = [
         techStack: ['React', 'Bootstrap', 'Vite', 'JavaScript', 'HTML', 'CSS'],
         demo: 'https://looplab-eight.vercel.app/',
         sourceCode: 'https://github.com/lilaaml/looplab',
-        projectScale: 'big',
+        projectScale: 'medium',
+        demoAvailable: true
+
+    },
+    {
+        title: 'Foodie',
+        info: 'A website for sharing cooking ideas, recipes, and experiences through posts, comments, videos, and pictures.',
+        techStack: ['React', 'Bootstrap', 'Vite', 'JavaScript', 'HTML', 'CSS'],
+        demo: 'https://foodie-five-sepia.vercel.app/',
+        sourceCode: 'https://github.com/lilaaml/foodie',
+        projectScale: 'medium',
         demoAvailable: true
 
     },
