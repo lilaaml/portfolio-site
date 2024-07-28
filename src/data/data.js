@@ -1,5 +1,14 @@
 export const projects = [
     {
+        title: 'To-do List <Work In Progress>',
+        info: 'A to-do list app with user registration and login.',
+        techStack: ['Django', 'Django REST Framework', 'Python', 'React', 'Bootstrap', 'Vite', 'JavaScript', 'HTML', 'CSS'],
+        demo: 'Unavailable',
+        sourceCode: 'https://github.com/lilaaml/todo-rdprac3',
+        projectScale: 'big',
+        demoAvailable: false
+    },
+    {
         title: 'Sneaker Spot',
         info: 'A modern, responsive e-commerce platform showcasing the latest and most popular sneakers.',
         techStack: ['React', 'Bootstrap', 'Vite', 'JavaScript', 'HTML', 'CSS'],
@@ -25,7 +34,6 @@ export const projects = [
         sourceCode: 'https://github.com/lilaaml/looplab',
         projectScale: 'medium',
         demoAvailable: true
-
     },
     {
         title: 'Foodie',
@@ -35,7 +43,6 @@ export const projects = [
         sourceCode: 'https://github.com/lilaaml/foodie',
         projectScale: 'medium',
         demoAvailable: true
-
     },
     {
         title: 'Sarana Door',
