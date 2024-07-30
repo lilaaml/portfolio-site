@@ -2,7 +2,7 @@ export const projects = [
     {
         title: 'To-do List <Work In Progress>',
         info: 'A to-do list app with user registration and login.',
-        techStack: ['Django', 'Django REST Framework', 'Python', 'React', 'Bootstrap', 'Vite', 'JavaScript', 'HTML', 'CSS'],
+        techStack: ['Django', 'Python', 'React', 'Bootstrap', 'Vite', 'JavaScript', 'HTML', 'CSS'],
         demo: 'Unavailable',
         sourceCode: 'https://github.com/lilaaml/todo-rdprac3',
         projectScale: 'big',
