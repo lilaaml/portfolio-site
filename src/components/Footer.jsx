@@ -1,10 +1,12 @@
 const Footer = () => {
   return (
-    <div className="footer my-3">
-      <div className="copyright text-center p-3 d-flex flex-column">
-        <span>Copyright &copy; 2024 Lila Amelia</span>
+    <footer className="border-t border-border mt-24 py-8 text-center text-sm text-muted-foreground w-full">
+      <div className="container">
+        <p>
+          &copy; {new Date().getFullYear()} <span className="text-primary font-medium">Lila Amelia</span>. All rights reserved.
+        </p>
       </div>
-    </div>
+    </footer>
   )
 }
 
