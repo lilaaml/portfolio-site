@@ -10,7 +10,7 @@ const Intro = () => {
           Hey there, I&apos;m <span className="text-primary">Lila</span>
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-[600px] mb-10 leading-relaxed">
-          Technical professional bridging software engineering and risk management. I manage the full lifecycle of risk; from code-level vulnerabilities to business process integrity and regulatory compliance. Expert in leveraging this hybrid background for Application Security and Security Consulting.
+          Where robust design meets rigorous security.
         </p>
         <div className="flex flex-wrap gap-4 justify-center w-full">
           <Button asChild size="lg">
