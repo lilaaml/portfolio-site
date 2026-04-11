@@ -1,61 +1,59 @@
-import Typewriter from 'typewriter-effect';
-
-const Terminal = () => {
-  return (
-    <div className="w-full max-w-2xl mt-12 overflow-hidden rounded-xl bg-[#1d1d1d] border border-border/50 shadow-2xl font-mono text-sm md:text-base text-slate-300">
-      <div className="flex items-center gap-2 px-4 py-3 bg-[#333] border-b border-white/5">
-        <div className="flex gap-1.5">
-          <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
-          <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
-          <div className="w-3 h-3 rounded-full bg-[#27c93f]" />
-        </div>
-        <div className="flex-1 text-center text-xs text-slate-500 font-sans tracking-wide">bash — 80x24</div>
-      </div>
-      <div className="p-6 min-h-[220px]">
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-              .typeString('<span class="text-slate-500">$</span> lila-audit --target <span class="text-emerald-400">"business_logic"</span>')
-              .pauseFor(500)
-              .typeString('<br/>[<span class="text-amber-400">WAIT</span>] Scanning repository for vulnerabilities...')
-              .pauseFor(800)
-              .typeString('<br/>[<span class="text-emerald-400">OK</span>] Code-level integrity verified.')
-              .pauseFor(500)
-              .typeString('<br/>[<span class="text-amber-400">WAIT</span>] Checking regulatory compliance (ISO 27001/SOC2)...')
-              .pauseFor(800)
-              .typeString('<br/>[<span class="text-emerald-400">OK</span>] Business process integrity aligned.')
-              .pauseFor(1000)
-              .typeString('<br/><span class="text-primary font-bold">[SUCCESS] System resilient. Ready for deployment.</span>')
-              .start();
-          }}
-          options={{
-            cursor: '▋',
-            delay: 30,
-          }}
-        />
-      </div>
-    </div>
-  );
-};
+import { ShieldCheck, BarChart3, ClipboardCheck, Zap } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const AboutMe = () => {
-  return (
-    <section id="aboutme" className="container min-h-screen flex flex-col justify-center items-center py-24 px-4 w-full">
-      <div className="max-w-4xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-            Bridging Code & Risk
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            I help organizations navigate the complex landscape of digital risk without slowing down innovation. With a background that spans the full software lifecycle, I provide a unique perspective that treats security not as a hurdle, but as a core feature of high-quality engineering.
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <Terminal />
-        </div>
-      </div>
-    </section>
-  )
+    const expertise = [
+        {
+            title: "Secure SaaS Development",
+            icon: <ShieldCheck className="w-8 h-8 text-primary" />,
+            description: "Proven track record of architecting and deploying full-stack SaaS applications, with a heavy emphasis on secure Identity and Access Management (IAM) and Role-Based Access Control (RBAC)."
+        },
+        {
+            title: "Risk & Audit Leadership",
+            icon: <BarChart3 className="w-8 h-8 text-primary" />,
+            description: "I design and execute internal IT Audit Working Papers, establishing technical standards for ground checks and control verification in diverse client environments."
+        },
+        {
+            title: "Technical Compliance",
+            icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
+            description: "Specializing in ensuring alignment between manual business workflows (AR, AP, Purchasing) and digital systems through comprehensive Tests of Controls (TOC)."
+        },
+        {
+            title: "Ethical Hacking",
+            icon: <Zap className="w-8 h-8 text-primary" />,
+            description: "As a CEH, I leverage an attacker's mindset to lead technical evaluations of infrastructure and data integrity, translating complex findings into actionable insights."
+        }
+    ];
+
+    return (
+        <section id="aboutme" className="container py-24 px-4 w-full">
+            <div className="flex flex-col items-center mb-16 text-center">
+                <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-foreground">Expertise & Experience</h2>
+                <div className="h-1.5 w-20 bg-primary rounded-full mb-6" />
+                <p className="text-muted-foreground text-lg max-w-[700px]">
+                    Bridging the gap between high-velocity engineering and rigorous risk management.
+                </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                {expertise.map((item, index) => (
+                    <Card key={index} className="group bg-card/30 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <CardHeader className="flex flex-row items-center gap-4 pb-4">
+                            <div className="p-2.5 rounded-lg bg-primary/5 group-hover:bg-primary/10 transition-colors duration-300">
+                                {item.icon}
+                            </div>
+                            <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors">{item.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <CardDescription className="text-muted-foreground text-base leading-relaxed">
+                                {item.description}
+                            </CardDescription>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
+        </section>
+    );
 }
 
-export default AboutMe
+export default AboutMe;

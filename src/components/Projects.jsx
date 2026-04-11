@@ -9,9 +9,9 @@ const Projects = () => {
   return (
     <section id="projects" className="container py-24 w-full">
       <div className="flex flex-col items-center mb-12">
-        <h2 className="text-3xl tracking-tight font-semibold text-center mt-3 mb-0">Featured Projects</h2>
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-foreground">Featured Projects</h2>
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <Card key={project.id} className="flex flex-col h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-card/50 backdrop-blur-sm border-border/50">
