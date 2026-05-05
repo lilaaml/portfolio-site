@@ -1,43 +1,58 @@
 import { projects } from '../data/data'
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import './Projects.css'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 
 const Projects = () => {
-    const techArray = (techStack) => {
-        return techStack.map(tech => <div key={tech.id} id="tech-list" className="d-flex flex-wrap justify-content-center">
-          <div className="d-flex">
-            <span className="dot"></span>
-            <span className="mx-2">{tech}</span>
-          </div>
-        </div>)
-    }
-    
-    const projectList = projects.map((project) => (
-        <div key={project.id} id="project-item" className="pb-3 px-3 text-center">
-          <h3 id="project-title" className="fw-bold">{project.title}</h3>
-          <span id="project-info" className="mt-2 lead">{project.info}</span>
-          <div id="tech-grid" className="mt-3 d-flex flex-wrap justify-content-center">{techArray(project.techStack)}</div>
-          <div id="link-grid" className="mt-3 d-flex flex-wrap justify-content-center">
-            {
-              project.demoAvailable ? (
-                <a href={project.demo} className="btn btn-secondary live-btn">Live Demo <BsBoxArrowUpRight className="link-icon" /></a>
-              ) : (
-                <a href={project.demo} className="btn btn-secondary disabled live-btn">Live Demo Unavailable</a>
-              )
-            }
-            <a href={project.sourceCode} className="btn btn-secondary source-btn">Source Code <FaGithub className="link-icon" /></a>
-          </div>
-        </div>
-      ))
-
   return (
-    <div id="projects" className="container-sm justify-content-sm-center mb-5">
-      <div id="project-grid" className="d-flex flex-wrap justify-content-center">
-      <h3 className="fw-bold text-center mt-3 mb-0">Featured Projects</h3>
-        {projectList}
+    <section id="projects" className="container py-24 w-full">
+      <div className="flex flex-col items-center mb-12">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-foreground">Featured Projects</h2>
       </div>
-    </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project, index) => (
+          <Card key={project.id} className="flex flex-col h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-card/50 backdrop-blur-sm border-border/50">
+            <CardHeader>
+              <CardTitle className="text-xl">{project.title}</CardTitle>
+            </CardHeader>
+            <CardContent className="flex-1 flex flex-col gap-4">
+              <CardDescription className="text-base text-muted-foreground flex-1">
+                {project.info}
+              </CardDescription>
+              <div className="flex flex-wrap gap-2 mt-auto">
+                {project.techStack.map((tech, i) => (
+                  <Badge key={i} variant="secondary" className="font-normal opacity-80 hover:opacity-100 transition-opacity">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mr-1.5" />
+                    {tech}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+            <CardFooter className="flex gap-3 pt-4 border-t border-border/20">
+              {project.demoAvailable ? (
+                <Button asChild variant="default" className="flex-1" size="sm">
+                  <a href={project.demo} target="_blank" rel="noreferrer">
+                    Live Demo <BsBoxArrowUpRight className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              ) : (
+                <Button variant="secondary" className="flex-1 opacity-50 cursor-not-allowed" size="sm" disabled>
+                  Demo N/A
+                </Button>
+              )}
+              <Button asChild variant="outline" className="flex-1" size="sm">
+                <a href={project.sourceCode} target="_blank" rel="noreferrer">
+                  Source Code <FaGithub className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+    </section>
   )
 }
 
