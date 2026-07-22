@@ -52,7 +52,7 @@ const Intro = () => {
             Full-Stack Software Engineer & Security Specialist
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            I help organizations navigate the complex landscape of digital risk without slowing down innovation. With a background that spans the full software lifecycle, I provide a unique perspective that treats security not as a hurdle, but as a core feature of high-quality engineering.
+            A technical professional bridging software engineering and risk management. I manage the full lifecycle of risk; from code-level vulnerabilities to business process integrity and regulatory compliance.
           </p>
           <Button asChild size="lg" className="mt-6">
             <a href={cv} download="CV">Download CV</a>
