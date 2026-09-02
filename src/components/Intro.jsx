@@ -1,4 +1,4 @@
-import cv from '../assets/CV.pdf'
+
 import { Button } from "@/components/ui/button"
 import Typewriter from 'typewriter-effect';
 
@@ -54,9 +54,14 @@ const Intro = () => {
           <p className="text-lg text-muted-foreground leading-relaxed">
             A technical professional bridging software engineering and risk management. I manage the full lifecycle of risk; from code-level vulnerabilities to business process integrity and regulatory compliance.
           </p>
-          <Button asChild size="lg" className="mt-6">
-            <a href={cv} download="CV">Download CV</a>
-          </Button>
+          <div className="flex gap-4 mt-6">
+            <Button asChild size="lg">
+              <a href="https://www.linkedin.com/in/lilaaml404/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </Button>
+            <Button asChild size="lg" variant="secondary">
+              <a href="mailto:lila.amelia1604@gmail.com">Email</a>
+            </Button>
+          </div>
         </div>
         <div className="flex justify-center">
           <Terminal />
