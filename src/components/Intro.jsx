@@ -59,11 +59,13 @@ const Intro = () => {
           <div className="flex gap-4 mt-6">
             <Button asChild size="lg">
               <a href="https://www.linkedin.com/in/lilaaml404/" target="_blank" rel="noreferrer">
-                <FaLinkedin /> LinkedIn</a>
+                <FaLinkedin className="mr-2 h-5 w-5" /> LinkedIn
+              </a>
             </Button>
             <Button asChild size="lg" variant="secondary">
               <a href="mailto:lila.amelia1604@gmail.com">
-                <Mail /> Email</a>
+                <Mail className="mr-2 h-5 w-5" /> Email
+              </a>
             </Button>
           </div>
         </div>
