@@ -1,6 +1,8 @@
 
 import { Button } from "@/components/ui/button"
 import Typewriter from 'typewriter-effect';
+import { Mail } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 
 const Terminal = () => {
   return (
@@ -56,10 +58,12 @@ const Intro = () => {
           </p>
           <div className="flex gap-4 mt-6">
             <Button asChild size="lg">
-              <a href="https://www.linkedin.com/in/lilaaml404/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/lilaaml404/" target="_blank" rel="noreferrer">
+                <FaLinkedin /> LinkedIn</a>
             </Button>
             <Button asChild size="lg" variant="secondary">
-              <a href="mailto:lila.amelia1604@gmail.com">Email</a>
+              <a href="mailto:lila.amelia1604@gmail.com">
+                <Mail /> Email</a>
             </Button>
           </div>
         </div>
